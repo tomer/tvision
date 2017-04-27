@@ -1,0 +1,166 @@
+html { 
+  background: #a5a4ce; 
+  font-family: System, monospace; 
+  font-size: 10pt
+}
+
+.window {
+  position: relative;
+  cursor: default;
+  margin: 2em auto; width: 80%;
+  background: blue; color: white;
+  border: 6px double white;
+  padding: 1em;
+  box-shadow: 
+    0   0   0   3px blue,
+    1em 1em 3px 0 rgba(0,0,0,.5);
+  max-width: 640px;
+}
+
+.window.white {
+  background: silver;
+  color: black;
+  border-color: white;
+  box-shadow: 
+    0   0   0   3px silver,
+    1em 1em 3px 0 rgba(0,0,0,.5);
+}
+
+.window.half-width {
+  width: 50%;
+}
+
+.window :link { 
+  color: inherit;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.window :link:hover {
+  text-decoration: underline;
+}
+
+.window h1 { 
+  text-align: center;
+}
+
+
+.window.blue p {
+  /*color: white; text-shadow: 0 0 2px white;*/
+}
+
+button {
+  margin:0;padding:0;border:none;
+}
+
+button,
+.button,
+.button:link {
+  display: inline-block;
+  font-weight: bolder; color: white;
+  background: green;
+  padding: 0 1em;
+  box-shadow: .5em .5em 3px rgba(0,0,0,.5);
+  position: relative;
+  transition: .2s all ease-in;
+  border: 1px outset green;
+}
+
+button:before, 
+.button:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  /*background: rgba(255,255,0,.5); /* DEBUG CLICK AREA */
+}
+
+button:hover,
+.button:active, 
+.button:focus,
+.button:hover { 
+  transform: translate3d(.25em,.25em,10em);
+  box-shadow: 0 0 0 rgba(0,0,0,.5);
+  background: limegreen;
+}
+
+button:hover:before, 
+.button:hover:before,
+button:focus:before,
+.button:focus:before {
+  top: -1em;
+  left: -1em;
+}
+
+button:first-letter,
+.button:first-letter {
+  color: yellow;
+}
+
+input, textarea {
+  background: blue; 
+  color: aqua; 
+  width: 100%; 
+  max-width: 100%;
+}
+
+input[type=radio], 
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=radio] + label[for]:before,
+input[type=checkbox] + label[for]:before {
+  display: inline-block;
+  height: 1em; width: 2em;
+}
+
+input[type=radio] + label[for]:before {
+  content: "( ) "
+}
+
+input[type=checkbox] + label[for]:before {
+  content: "[ ] "
+}
+
+input[type=radio]:checked + label[for]:before {
+  content: "(⚫) "
+}
+
+input[type=checkbox]:checked + label[for]:before {
+  content: "[X] "
+}
+
+.window > textarea {
+  width: 100%;
+  border: none;
+}
+
+
+ul { 
+  margin: 0; 
+  padding: 0; 
+}
+
+li { 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+}
+
+.top-menu-bar {
+  /*position: fixed; top: 0; left: 0; right: 0;*/
+  background: white;
+}
+
+.top-menu-bar a { 
+  margin: 0 2em; 
+  text-decoration: none; 
+  color: black
+}
+
+strong:before, strong:after { content: "*"; }
+i:before, i:after { content: "/"; }
+
