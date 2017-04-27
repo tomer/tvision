@@ -135,7 +135,7 @@ input[type=checkbox] + label[for]:before {
 }
 
 input[type=radio]:checked + label[for]:before {
-  content: "(⚫) "
+  content: "(⚫\fe0e) "
 }
 
 input[type=checkbox]:checked + label[for]:before {
