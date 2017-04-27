@@ -66,6 +66,12 @@ button,
   border: 1px outset green;
 }
 
+button.full-width,
+.button.full-width {
+	display: block;
+	text-align: center;
+}
+
 button:before, 
 .button:before {
   top: 0;
