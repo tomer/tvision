@@ -122,6 +122,7 @@ input[type=checkbox] {
 
 input[type=radio] + label[for]:before,
 input[type=checkbox] + label[for]:before {
+  text-align:center;
   display: inline-block;
   height: 1em; width: 2em;
 }
@@ -135,7 +136,7 @@ input[type=checkbox] + label[for]:before {
 }
 
 input[type=radio]:checked + label[for]:before {
-  content: "(⚫\fe0e) "
+  content: "(•) "
 }
 
 input[type=checkbox]:checked + label[for]:before {
