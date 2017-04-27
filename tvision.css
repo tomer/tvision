@@ -57,7 +57,10 @@ button,
 .button,
 .button:link {
   display: inline-block;
-  font-weight: bolder; color: white;
+  font-weight: bolder;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
   background: green;
   padding: 0 1em;
   box-shadow: .5em .5em 3px rgba(0,0,0,.5);
